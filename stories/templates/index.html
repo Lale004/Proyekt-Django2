@@ -1,0 +1,16 @@
+<h1>Index page</h1>
+
+<h1>Posts</h1>
+<ul>
+    {% for post in posts %}
+    <li>{{ post.user.username }}</li>
+    {% endfor %}
+</ul>
+<br>
+<hr>
+<hr>
+<ul>
+{%for comment in comments%}
+<li>Comment title:{{comment.title}},Comment text:{{comment.text}},Comment author:{{comment.author}}</li><hr>
+{% endfor %}
+</ul>
